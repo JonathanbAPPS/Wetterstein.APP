@@ -1,104 +1,111 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wetterstein Support</title>
-<style>
-  :root {
-    --ground: #c8d6e0;
-    --ink: #171d23;
-    --muted: rgba(23, 29, 35, .65);
-    --box: rgba(23, 29, 35, .05);
-    --line: rgba(23, 29, 35, .14);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --ground: #1b2430;
-      --ink: #f7fafc;
-      --muted: rgba(247, 250, 252, .65);
-      --box: rgba(247, 250, 252, .06);
-      --line: rgba(247, 250, 252, .16);
-    }
-  }
-  body {
-    margin: 0;
-    padding: 60px 20px;
-    background: var(--ground);
-    color: var(--ink);
-    font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont,
-                 "Segoe UI", Roboto, system-ui, sans-serif;
-    text-align: center;
-    -webkit-text-size-adjust: 100%;
-  }
-  .mark { width: 64px; height: 64px; margin-bottom: 22px; }
-  h1 {
-    font-family: ui-serif, "New York", Georgia, "Times New Roman", serif;
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0 0 20px;
-  }
-  p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 20px;
-    line-height: 1.6;
-    color: var(--muted);
-  }
-  a { color: var(--ink); text-decoration: underline; }
-  .box {
-    margin-top: 40px;
-    padding: 30px;
-    background: var(--box);
-    border-radius: 16px;
-    display: inline-block;
-    max-width: 600px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .mail { font-size: 20px; word-break: break-word; }
-  .divider { border: none; border-top: 1px solid var(--line); margin: 30px 0; }
-  .credit { margin-top: 60px; font-size: 14px; color: var(--muted); opacity: .8; }
-</style>
+    <meta charset="UTF-8">
+    <title>Support – Wetterstein</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+            line-height: 1.7;
+            color: #222;
+            background: #fff;
+            -webkit-text-size-adjust: 100%;
+        }
+        h1, h2 {
+            color: #111;
+            line-height: 1.3;
+        }
+        h1 { font-size: 26px; margin-bottom: 8px; }
+        h2 { font-size: 19px; margin-top: 34px; }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+        li { margin-bottom: 6px; }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
+        }
+        a { color: #222; }
+        .meta { color: #555; font-size: 15px; }
+    </style>
 </head>
 <body>
 
-<!-- Der Umriss aus dem App-Symbol. -->
-<svg class="mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
-  <path d="M6 40 L24 14 L55 6 L84 22 L94 55 L78 86 L42 94 L12 72 Z"
-        stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M24 14 L46 52 L94 55"
-        stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-</svg>
+<h1>Support – Wetterstein</h1>
+<p class="meta">Weather app for iPhone</p>
 
-<h1>Wetterstein Support</h1>
+<p>Wetterstein displays the current weather as a stone hanging on a chain. This page provides contact details and information on the use of the application.</p>
 
-<div class="box">
-  <p>Danke, dass du <strong>Wetterstein</strong> benutzt – die Wetter-App, die aus
-     einem Stein an einer Kette besteht.</p>
+<hr>
 
-  <p>Bei Problemen, Fragen oder Rückmeldungen erreichst du mich per E-Mail:</p>
+<h2>1. Contact</h2>
+<p>For questions, problems or feedback regarding the application, please write to:</p>
+<p><a href="mailto:starflightapp@gmail.com?subject=Wetterstein">starflightapp@gmail.com</a></p>
+<p>Enquiries may be submitted in English or German. Replies are usually sent within a few working days.</p>
 
-  <p class="mail"><strong><a href="mailto:starflightapp@gmail.com?subject=Wetterstein">starflightapp@gmail.com</a></strong></p>
+<hr>
 
-  <p>Ich antworte, so schnell ich kann. Wenn etwas nicht stimmt, hilft mir das
-     weiter: welches iPhone, welche iOS-Version, und was auf dem Bildschirm stand.</p>
+<h2>2. Reporting a Problem</h2>
+<p>When reporting a problem, the following details are helpful:</p>
+<ul>
+    <li>the iPhone model in use;</li>
+    <li>the installed version of iOS;</li>
+    <li>the version of the application, shown at the bottom of its settings screen;</li>
+    <li>a description of what was displayed and what was expected instead.</li>
+</ul>
 
-  <hr class="divider">
+<hr>
 
-  <p lang="en">Thank you for using <strong>Wetterstein</strong> – the weather app that
-     is nothing but a stone on a chain.</p>
+<h2>3. System Requirements</h2>
+<p>iPhone running iOS 26.5 or later. The application is designed for portrait orientation only.</p>
 
-  <p lang="en">If you run into trouble, have a question, or want to send feedback,
-     write to me by email:</p>
+<hr>
 
-  <p class="mail"><strong><a href="mailto:starflightapp@gmail.com?subject=Wetterstein">starflightapp@gmail.com</a></strong></p>
+<h2>4. Privacy</h2>
+<p>The application uses no user account, no advertising and no analytics services. Details of the processing of personal data are set out in the <a href="privacy.html">Privacy Policy</a>.</p>
 
-  <p lang="en">I reply as soon as I can. If something is wrong, this helps me: which
-     iPhone, which iOS version, and what was on the screen.</p>
-</div>
+<hr>
+<hr>
 
-<p class="credit">&copy; 2026 Jonathan Braun</p>
+<h1 lang="de">Support – Wetterstein</h1>
+<p class="meta" lang="de">Wetter-App für das iPhone</p>
+
+<p lang="de">Wetterstein zeigt das aktuelle Wetter als Stein an einer Kette. Diese Seite enthält die Kontaktdaten sowie Hinweise zur Nutzung der Anwendung.</p>
+
+<hr>
+
+<h2 lang="de">1. Kontakt</h2>
+<p lang="de">Bei Fragen, Problemen oder Rückmeldungen zur Anwendung wenden Sie sich bitte an:</p>
+<p lang="de"><a href="mailto:starflightapp@gmail.com?subject=Wetterstein">starflightapp@gmail.com</a></p>
+<p lang="de">Anfragen können auf Deutsch oder Englisch gestellt werden. Die Beantwortung erfolgt in der Regel innerhalb weniger Werktage.</p>
+
+<hr>
+
+<h2 lang="de">2. Meldung von Problemen</h2>
+<p lang="de">Bei der Meldung eines Problems sind die folgenden Angaben hilfreich:</p>
+<ul lang="de">
+    <li>das verwendete iPhone-Modell;</li>
+    <li>die installierte iOS-Version;</li>
+    <li>die Version der Anwendung, angezeigt am unteren Rand ihres Einstellungsbildschirms;</li>
+    <li>eine Beschreibung dessen, was angezeigt wurde und was stattdessen erwartet wurde.</li>
+</ul>
+
+<hr>
+
+<h2 lang="de">3. Systemvoraussetzungen</h2>
+<p lang="de">iPhone mit iOS 26.5 oder neuer. Die Anwendung ist ausschließlich für das Hochformat ausgelegt.</p>
+
+<hr>
+
+<h2 lang="de">4. Datenschutz</h2>
+<p lang="de">Die Anwendung verwendet kein Benutzerkonto, keine Werbung und keine Analysedienste. Einzelheiten zur Verarbeitung personenbezogener Daten enthält die <a href="privacy.html">Datenschutzerklärung</a>.</p>
 
 </body>
 </html>
